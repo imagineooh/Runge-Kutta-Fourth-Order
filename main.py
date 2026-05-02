@@ -1,16 +1,14 @@
-def rk4(f1, f2):
+def rk4(f1, f2, iterations, x0, y0):
 
     h = 0.000001
 
     yn = []
     tn = []
-    y0 = 1
-    x0 = 0
     t0 = 0
     yn.append([x0, y0])
     tn.append(t0)
 
-    for n in range(1000000):
+    for n in range(iterations):
         if n == 0:
             k1 = [f1(x0, y0), f2(x0, y0)]
             k2 = [f1(x0 + h / 2 * k1[0], y0 + h / 2 * k1[1]), f2(x0 + h / 2 * k1[0], y0 + h / 2 * k1[1])]

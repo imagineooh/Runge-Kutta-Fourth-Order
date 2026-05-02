@@ -36,3 +36,8 @@ x_vals, y_vals = rk4(f1, f2)
 
 # Licence
 This project is licenced under an MIT licence
+
+## Future updates
+I plan on:
+- Implementing more Runge Kutta Methods
+- Find a time efficient way to add more dimensions to the original code

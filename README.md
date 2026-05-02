@@ -29,3 +29,6 @@ def f2(x, y):
     return x - y
 
 x_vals, y_vals = rk4(f1, f2)
+
+# Licence
+This project is licenced under an MIT licence
